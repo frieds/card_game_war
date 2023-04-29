@@ -9,3 +9,6 @@ __pycache__/
 
 # Environments
 venv/
+
+# pytest
+.pytest_cache/
