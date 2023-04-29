@@ -91,3 +91,9 @@ Here's a recommended workflow for contributors who want to set up the project wi
    ```
    pre-commit install
    ```
+
+6. Run the test suite and ensure everything passes:
+
+    ```
+    python -m pytest tests/
+    ```
