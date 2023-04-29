@@ -53,3 +53,41 @@ The implementation is divided into the following classes:
 ## Contributing
 
 If you'd like to contribute to this project, please submit a pull request with your proposed changes. I welcome improvements and suggestions.
+
+Here's a recommended workflow for contributors who want to set up the project with a virtual environment:
+
+1. Clone the repository and navigate to the project's root directory.
+
+2. Create a virtual environment using `venv`:
+
+   ```
+   python -m venv venv
+   ```
+
+   This will create a virtual environment in a folder named `venv` within your project directory.
+
+3. Activate the virtual environment:
+
+   - On Windows:
+     ```
+     .\venv\Scripts\activate
+     ```
+
+   - On macOS/Linux:
+     ```
+     source venv/bin/activate
+     ```
+
+4. Install the development dependencies:
+
+   ```
+   pip install -r dev_requirements.txt
+   ```
+
+   This will install the `pre-commit` package and any other development-specific packages.
+
+5. Set up the pre-commit hooks:
+
+   ```
+   pre-commit install
+   ```
