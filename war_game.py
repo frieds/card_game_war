@@ -5,10 +5,10 @@ This module contains the classes and logic for the War card game and three card 
 instance of the WarGame class and call the `play()` method. For more information and examples, see the README file.
 """
 
-from random import shuffle
 from collections import deque
-from typing import List, Optional, Tuple
 from enum import Enum
+from random import shuffle
+from typing import List, Optional, Tuple
 
 
 class CardValue(Enum):
