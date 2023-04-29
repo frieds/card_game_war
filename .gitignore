@@ -5,7 +5,7 @@ __pycache__/
 
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 # Covers JetBrains IDEs:
- .idea/
+.idea/
 
 # Environments
 venv/
