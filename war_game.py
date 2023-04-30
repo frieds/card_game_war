@@ -144,11 +144,14 @@ class WarGame:
             round_winner = self.player1
         return round_winner
 
-    def play(self) -> Player:
+    def play(self, input_function=input) -> Player:
         """
         Starts the game and continues until one of the players wins.
         Half the deck is dealt to each player, then runs battle rounds and war rounds as needed.
         Each round requires user input (pressing Enter) to proceed.
+
+        The input_function parameter is used for testing purposes. By default, it is set to the built-in input function.
+        During testing, a mock function can be passed to simulate user input without blocking test execution.
 
         Returns:
             The Player instance who won the game.
@@ -156,7 +159,7 @@ class WarGame:
         self._deal_half_deck_to_each_player()
 
         while self.player1.has_cards() and self.player2.has_cards():
-            input("Press Enter to start the next round...")
+            input_function("Press Enter to start the next round...")
 
             print("Battle!")
             round_winner = self._play_battle_round()
