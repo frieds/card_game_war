@@ -11,6 +11,7 @@ def player_with_cards():
         return player
     return _player_with_cards
 
+
 @pytest.fixture
 def player_with_set_cards():
     player = Player(name="Ready Player One")
