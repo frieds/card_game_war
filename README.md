@@ -1,6 +1,6 @@
 # War Card Game
 
-This repository contains the implementation of the classic War card game in Python. The game is played by two players using a standard 52-card deck.
+This repository is the implementation of the classic War card game in Python. The game is played by two players using a standard 52-card deck.
 
 ## How to Play
 
